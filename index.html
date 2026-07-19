@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DS Journey — Prep Manifest</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Route to Data Scientist &mdash; Tashkent / International</div>
+    <h1>DS Journey</h1>
+    <p class="subtitle">28-week route from Junior Data Analyst to hireable Data Scientist. Sign in to track checkpoints &mdash; your progress syncs across every device.</p>
+
+    <div class="auth-bar hidden" id="authBar">
+      <div class="auth-user"><img id="userAvatar" alt=""><span id="userName"></span></div>
+      <button class="btn" id="signOutBtn">Sign out</button>
+    </div>
+  </header>
+
+  <div class="gate" id="gate">
+    <h2>Sign in to start tracking</h2>
+    <p>Your checkpoints, notes, and stats are saved to your account and sync automatically across desktop and phone.</p>
+    <button class="btn primary" id="googleSignIn">Sign in with Google</button>
+    &nbsp;
+    <button class="btn" id="githubSignIn">Sign in with GitHub</button>
+  </div>
+
+  <div id="appRoot" class="hidden">
+    <div class="mission">
+      <div class="mission-top">
+        <div class="mission-label">Mission Status</div>
+        <div class="mission-current" id="missionCurrent">&mdash;</div>
+      </div>
+      <div class="route-track"><div class="route-fill" id="routeFill"></div></div>
+      <div class="route-labels">
+        <span id="overallLabel">0% &middot; 0/28 weeks cleared</span>
+        <span id="hoursLabel">0 / 0 hrs logged</span>
+      </div>
+      <div class="stats-grid" id="statsGrid"></div>
+      <div class="badges-row" id="badgesRow"></div>
+      <div class="sync-note" id="syncNote"></div>
+    </div>
+
+    <div class="phase-nav" id="phaseNav"></div>
+    <div id="phases"></div>
+  </div>
+
+  <footer>DS JOURNEY &middot; PROGRESS SYNCED VIA FIREBASE &middot; A WEEK CLEARS WHEN EVERY "DONE MEANS" ITEM IS CHECKED</footer>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
